@@ -5,5 +5,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bachelor Degree Holders in Dallas, Texas",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidycensus)\nlibrary(tigris)\n\nTo enable caching of data, set `options(tigris_use_cache = TRUE)`\nin your R script or .Rprofile.\n\nus_median_age <- read_rds(\"data/median_age.rds\")\nggplot(data = us_median_age, aes(fill = estimate)) + \n  geom_sf() + \n  scale_fill_distiller(palette = \"RdPu\", \n                       direction = 1) + \n  labs(title = \"  Median Age by State, 2019\",\n       caption = \"Data source: 2019 1-year ACS, US Census Bureau\",\n       fill = \"ACS estimate\") + \n  theme_void()"
   }
 ]
